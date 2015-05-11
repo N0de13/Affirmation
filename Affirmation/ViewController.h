@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <Social/Social.h>
+#import <Accounts/Accounts.h>
 
 int randomValue;
 
@@ -15,6 +16,9 @@ NSString *dailyAffirmation = @"test";
 
 
 @interface ViewController : UIViewController  {
+    
+    SLComposeViewController*mySlComposerSheet;
+    
 
     IBOutlet UILabel *label;
     IBOutlet UIButton *button;
@@ -23,6 +27,7 @@ NSString *dailyAffirmation = @"test";
 
 
 -(IBAction)generateNumber:(id)sender;
+-(IBAction)PostToFacebook:(id)sender;
 
 
 

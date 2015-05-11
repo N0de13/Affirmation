@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dU-y3-Fyk">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dU-y3-Fyk">
                                 <rect key="frame" x="230" y="514" width="74" height="34"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -39,8 +39,8 @@
                                     <action selector="generateNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QE2-vq-RFt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" verticalHuggingPriority="251" misplaced="YES" text="Press Button For Affirmation" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="bTY-Fo-rXd">
-                                <rect key="frame" x="44" y="195" width="240" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" verticalHuggingPriority="251" text="Press Button For Affirmation" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="bTY-Fo-rXd">
+                                <rect key="frame" x="44" y="195" width="230" height="271"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="271" id="B5r-gL-QhR"/>
                                     <constraint firstAttribute="width" constant="230" id="eI6-hj-b3F"/>
@@ -62,12 +62,37 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1G-VL-guX">
+                                <rect key="frame" x="16" y="518" width="84" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="47z-p1-Pl2"/>
+                                    <constraint firstAttribute="width" constant="145" id="DLa-LR-4Go"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="Waa-cB-d8A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="SHARE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="PostToFacebook:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mp7-xU-dcM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="7dU-y3-Fyk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="C25-gF-Uuh"/>
+                            <constraint firstItem="7dU-y3-Fyk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="214" id="C25-gF-Uuh"/>
+                            <constraint firstItem="7dU-y3-Fyk" firstAttribute="bottom" secondItem="y1G-VL-guX" secondAttribute="bottom" id="GoK-0a-OtP"/>
                             <constraint firstItem="7dU-y3-Fyk" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="MYE-0k-hKD"/>
                             <constraint firstItem="7dU-y3-Fyk" firstAttribute="top" secondItem="bTY-Fo-rXd" secondAttribute="bottom" constant="48" id="Olu-0w-lZr"/>
-                            <constraint firstAttribute="centerX" secondItem="9dX-Hk-klH" secondAttribute="centerX" id="T3H-Cv-PkZ"/>
+                            <constraint firstAttribute="centerX" secondItem="9dX-Hk-klH" secondAttribute="centerX" constant="-4" id="T3H-Cv-PkZ"/>
+                            <constraint firstItem="y1G-VL-guX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="XER-47-TcH"/>
                             <constraint firstAttribute="bottom" secondItem="7dU-y3-Fyk" secondAttribute="bottom" constant="20" symbolic="YES" id="Xlm-Yy-YKl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bTY-Fo-rXd" secondAttribute="trailing" constant="30" id="uEf-kH-SJh"/>
                             <constraint firstItem="bTY-Fo-rXd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="28" id="w70-uA-cGD"/>

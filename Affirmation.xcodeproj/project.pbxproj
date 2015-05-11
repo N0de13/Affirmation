@@ -20,6 +20,7 @@
 		E675E8331AFCF2BA0089FA33 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E675E8321AFCF2BA0089FA33 /* icon.png */; };
 		E675E8351B00DCEC0089FA33 /* affirm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E675E8341B00DCEC0089FA33 /* affirm.jpg */; };
 		E675E8371B00E4150089FA33 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E675E8361B00E4150089FA33 /* Social.framework */; };
+		E6A3EDAF1B00FDFE00A6D6C9 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A3EDAE1B00FDFE00A6D6C9 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		E675E8321AFCF2BA0089FA33 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Affirmation/icon.png; sourceTree = "<group>"; };
 		E675E8341B00DCEC0089FA33 /* affirm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = affirm.jpg; sourceTree = "<group>"; };
 		E675E8361B00E4150089FA33 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		E6A3EDAE1B00FDFE00A6D6C9 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A3EDAF1B00FDFE00A6D6C9 /* Accounts.framework in Frameworks */,
 				E675E8371B00E4150089FA33 /* Social.framework in Frameworks */,
 				E675E82F1AFCE6120089FA33 /* AVFoundation.framework in Frameworks */,
 			);
@@ -77,10 +80,9 @@
 		E675E7F81AFBE67A0089FA33 = {
 			isa = PBXGroup;
 			children = (
-				E675E8361B00E4150089FA33 /* Social.framework */,
-				E675E82E1AFCE6120089FA33 /* AVFoundation.framework */,
-				E675E82B1AFBEE070089FA33 /* resources */,
 				E675E8031AFBE67A0089FA33 /* Affirmation */,
+				E6A3EDB01B00FE0B00A6D6C9 /* Frameworks */,
+				E675E82B1AFBEE070089FA33 /* resources */,
 				E675E81D1AFBE67A0089FA33 /* AffirmationTests */,
 				E675E8021AFBE67A0089FA33 /* Products */,
 			);
@@ -145,6 +147,16 @@
 				E675E82C1AFBEE370089FA33 /* bamboo.png */,
 			);
 			name = resources;
+			sourceTree = "<group>";
+		};
+		E6A3EDB01B00FE0B00A6D6C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6A3EDAE1B00FDFE00A6D6C9 /* Accounts.framework */,
+				E675E8361B00E4150089FA33 /* Social.framework */,
+				E675E82E1AFCE6120089FA33 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +464,7 @@
 				E675E8261AFBE67A0089FA33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E675E8271AFBE67A0089FA33 /* Build configuration list for PBXNativeTarget "AffirmationTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +473,7 @@
 				E675E8291AFBE67A0089FA33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
