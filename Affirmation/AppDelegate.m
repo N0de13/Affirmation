@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSString *music = [[NSBundle mainBundle] pathForResource:@"chime"ofType:@"wav"];
+    audioPlayer1 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:music]error:NULL];
+    audioPlayer1.delegate = self;
+    audioPlayer1.numberOfLoops = -1;
+    [audioPlayer1 play];
+    
+    
     return YES;
 }
 

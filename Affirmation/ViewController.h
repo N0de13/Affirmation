@@ -8,7 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+
+int randomValue;
+
+NSString *dailyAffirmation = @"test";
+
+
+@interface ViewController : UIViewController  {
+
+    IBOutlet UILabel *label;
+    IBOutlet UIButton *button;
+    
+}
+
+
+-(IBAction)generateNumber:(id)sender;
+
+
 
 
 @end
