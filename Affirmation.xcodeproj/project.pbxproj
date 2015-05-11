@@ -208,6 +208,11 @@
 				TargetAttributes = {
 					E675E8001AFBE67A0089FA33 = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+						};
 					};
 					E675E8191AFBE67A0089FA33 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -392,9 +397,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Joseph Murphy (XFGF8G4YZ5)";
 				INFOPLIST_FILE = Affirmation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0889ada1-60c6-4977-8455-d7fc2f4aecb2";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -404,9 +411,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Joseph Murphy (XFGF8G4YZ5)";
 				INFOPLIST_FILE = Affirmation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0889ada1-60c6-4977-8455-d7fc2f4aecb2";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
